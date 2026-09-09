@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Application</class>
+ <widget class="QMainWindow" name="Application">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>937</width>
+    <height>1111</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Realtime Filter Designer</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/DELL/Downloads/Assets/WindowIcon.png</normaloff>C:/Users/DELL/Downloads/Assets/WindowIcon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: #ffffff;
+background-color: #140a0e;
+font-weight: bold;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_12">
+    <item row="2" column="0">
+     <widget class="QLabel" name="status_label">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #ffffff;
+font-weight:Bold;
+font-size: 20px;
+border: none;
+
+background-color: #140a0e;</string>
+      </property>
+      <property name="text">
+       <string> Status : Tracking Object...</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QGroupBox" name="groupBox_14">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>2000</width>
+        <height>400</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+background-color: #140a0e;
+border-radius: 14px;
+border: None;
+    font-weight: bold;
+
+}
+QGroupBox::title {
+    color: white;
+    font-weight: bold;
+
+}
+background-color: #784B84;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+     border: 1.2px solid white;
+border-style: outset;
+border-radius: 5px;</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_15">
+       <item row="0" column="2">
+        <layout class="QHBoxLayout" name="horizontalLayout_38">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label1_24">
+           <property name="styleSheet">
+            <string notr="true">  appearance: button;
+  backface-visibility: hidden;
+  background-color: #826890;
+  border-radius: 20px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+font-size:30px;
+      color: white;
+   
+     border: none;
+padding-top:2px;
+padding-bottom:5px;
+font-weight:bold;
+padding-left:10px;
+padding-right:10px;
+</string>
+           </property>
+           <property name="text">
+            <string>Press 'Q' to Quit</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_31">
+         <property name="spacing">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label1_14">
+           <property name="styleSheet">
+            <string notr="true">  appearance: button;
+  backface-visibility: hidden;
+  background-color: #826890;
+  border-radius: 20px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+font-size:30px;
+      color: white;
+   
+     border: none;
+padding-top:2px;
+padding-bottom:5px;
+font-weight:bold;
+padding-left:10px;
+padding-right:10px;
+</string>
+           </property>
+           <property name="text">
+            <string>Drag Mouse to draw BBox</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer_40">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="fps_label">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #ffffff;
+font-weight:Bold;
+font-size: 20px;
+border: none;
+
+background-color: #140a0e;
+</string>
+      </property>
+      <property name="text">
+       <string> FPS : 32</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="task_label">
+        <property name="styleSheet">
+         <string notr="true">color: #ffffff;
+font-weight:Bold;
+font-size: 40px;
+border: none;
+
+background-color:#140a0e;
+</string>
+        </property>
+        <property name="text">
+         <string>EyeGo Object Tracker</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QFrame" name="frame_24">
+        <property name="maximumSize">
+         <size>
+          <width>0</width>
+          <height>700</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #2d282c; /* Background color */
+    border-radius: 15px; /* Curved borders */
+    border: 2px solid #ffffff; /* 3D outline */
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* 3D shadow effect */</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_33">
+         <property name="leftMargin">
+          <number>9</number>
+         </property>
+         <item row="0" column="1">
+          <layout class="QVBoxLayout" name="verticalLayout_73">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_44">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_74" stretch="0,5">
+               <item>
+                <spacer name="horizontalSpacer_16">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QWidget" name="outputImageTh" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>0</width>
+                   <height>700</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border: 1px solid #ffffff;
+background-color: #1f1f1f;</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QFrame" name="frame_25">
+          <property name="maximumSize">
+           <size>
+            <width>100000</width>
+            <height>100000</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #2d282c; /* Background color */
+    border-radius: 15px; /* Curved borders */
+    border: 2px solid #ffffff; /* 3D outline */
+
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* 3D shadow effect */</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_34">
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <item row="0" column="1">
+            <layout class="QVBoxLayout" name="verticalLayout_75">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_45">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_76" stretch="0">
+                 <item>
+                  <widget class="QLabel" name="video_label">
+                   <property name="styleSheet">
+                    <string notr="true">  appearance: button;
+  backface-visibility: hidden;
+  background-color: #826890;
+  border-radius: 20px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+font-size:30px;
+      color: white;
+   
+     border: none;
+padding-top:2px;
+padding-bottom:5px;
+font-weight:bold;
+padding-left:10px;
+padding-right:10px;
+border: 1px solid #ffffff;
+background-color: #1f1f1f;</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder></zorder>
+   <zorder>layoutWidget_2</zorder>
+   <zorder>groupBox_14</zorder>
+   <zorder>fps_label</zorder>
+   <zorder>status_label</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>937</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

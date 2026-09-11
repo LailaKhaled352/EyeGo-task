@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>937</width>
-    <height>1111</height>
+    <height>876</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -28,7 +28,7 @@ font-weight: bold;
     <string notr="true"/>
    </property>
    <layout class="QGridLayout" name="gridLayout_12">
-    <item row="2" column="0">
+    <item row="1" column="0">
      <widget class="QLabel" name="status_label">
       <property name="maximumSize">
        <size>
@@ -49,7 +49,7 @@ background-color: #140a0e;</string>
       </property>
      </widget>
     </item>
-    <item row="4" column="0">
+    <item row="3" column="0">
      <widget class="QGroupBox" name="groupBox_14">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -170,28 +170,6 @@ padding-right:10px;
       </layout>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="fps_label">
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: #ffffff;
-font-weight:Bold;
-font-size: 20px;
-border: none;
-
-background-color: #140a0e;
-</string>
-      </property>
-      <property name="text">
-       <string> FPS : 32</string>
-      </property>
-     </widget>
-    </item>
     <item row="0" column="0">
      <layout class="QHBoxLayout" name="horizontalLayout_11">
       <item>
@@ -238,7 +216,7 @@ background-color:#140a0e;
       </item>
      </layout>
     </item>
-    <item row="3" column="0">
+    <item row="2" column="0">
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
        <widget class="QFrame" name="frame_24">
@@ -327,9 +305,9 @@ background-color: #1f1f1f;</string>
            </size>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: #2d282c; /* Background color */
+           <string notr="true">background-color:  #140a0e; /* Background color */
     border-radius: 15px; /* Curved borders */
-    border: 2px solid #ffffff; /* 3D outline */
+    border: 2px solid  #140a0e; /* 3D outline */
 
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* 3D shadow effect */</string>
           </property>
@@ -353,7 +331,7 @@ background-color: #1f1f1f;</string>
                <item>
                 <layout class="QVBoxLayout" name="verticalLayout_76" stretch="0">
                  <item>
-                  <widget class="QLabel" name="video_label">
+                  <widget class="InteractiveVideoLabel" name="video_label">
                    <property name="styleSheet">
                     <string notr="true">  appearance: button;
   backface-visibility: hidden;
@@ -396,7 +374,6 @@ background-color: #1f1f1f;</string>
    <zorder></zorder>
    <zorder>layoutWidget_2</zorder>
    <zorder>groupBox_14</zorder>
-   <zorder>fps_label</zorder>
    <zorder>status_label</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -411,6 +388,13 @@ background-color: #1f1f1f;</string>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>InteractiveVideoLabel</class>
+   <extends>QLabel</extends>
+   <header>interactive_label</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

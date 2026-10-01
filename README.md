@@ -49,7 +49,7 @@ The codebase is structured into decoupled modules:
 ├── tracker.ui             # QtDesigner visual layout
 ├── .gitignore             # Git ignore patterns
 └── README.md              # Project documentation
-
+```
 ---
 
 ## Getting Started

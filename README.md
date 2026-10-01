@@ -62,8 +62,8 @@ The codebase is structured into decoupled modules:
 
 1. **Clone the repository:**
    ```bash
-   git clone <YOUR_GITHUB_REPO_URL>
-   cd <YOUR_REPO_NAME>
+   git clone https://github.com/LailaKhaled352/EyeGo-task
+   cd EyeGo-task
    ```
 
 2. **Install dependencies:**
